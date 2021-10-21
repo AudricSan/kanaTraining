@@ -1,0 +1,2 @@
+hiragana = new kana();
+startGame();
