@@ -15,6 +15,10 @@
   <link rel="stylesheet" href="ellements/css/checkbox.css" />
   <link rel="stylesheet" href="ellements/css/notification.css" />
 
+  <!-- ICON CSS -->
+  <script src="https://kit.fontawesome.com/eb747bd21c.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
+  
   <link rel="icon" type="image/svg+xml" href="ellements/img/favicon/favicon.svg">
   <link rel="icon" type="image/png" href="ellements/img/favicon/favicon.png">
 </head>
@@ -61,7 +65,11 @@
     <label for="katakanaDakuonCombo">Katakana Dakuon Combo </label>
   </div>
 
-  <a href="#" class="help">HELP</a>
+  <a href="#" class="help">HELP
+    <span class="material-icons-round iconhelp">
+      info
+    </span>
+  </a>
 
   <div id="notification">
     <!-- <div class="toast">Nop bad answerd, the good one is <span>"A"</span> </div> -->
@@ -70,21 +78,34 @@
   <div class="hiragana-symbol">
     <p class="test-skills">Test your kana's.</p>
     <div class="character"></div>
+
+    <span class="material-icons-round iconkeyboard">keyboard_double_arrow_right</span>
+    <span class="material-icons-round iconkeyboard">keyboard</span>
+    <span class="material-icons-round iconkeyboard">keyboard_double_arrow_left</span>
+
+    </span>
     <p class="input"></p>
   </div>
 
   <div class="score">
     <span class="sc">YOUR SCORE</span>
+    <span class="material-icons-round iconsport">sports_score</span>
 
     <span class="good">0</span>/<span class="total">0</span>
-
+  
     <a href="" target="_blank" class="twitter-share">
-      <i class="fab fa-1x fa-twitter"> </i>
+      <i class="fa fa-twitter"> </i>
       <span>SHARE ON TWITTER</span>
     </a>
   </div>
 
-  <a href="#" class="author">by Audric Rosier</a>
+  <a href="#" class="author">
+    by Audric Rosier
+
+    <span class="material-icons-round iconface">
+      face
+    </span>
+  </a>
 
   <script src="../model/class/kana.js"></script>
   <script src="../model/const.js"></script>
