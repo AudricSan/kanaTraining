@@ -55,9 +55,9 @@ class kana {
         ["ろ", "ro", true],
 
         ["わ", "wa", true],
-        ["ゐ", "wi", true],
+        ["ゐ", "wi", false],
         ["ゑ", "we", false],
-        ["を", "wo", false],
+        ["を", "wo", true],
 
         ["ん", "n-nn", true]
     ];
@@ -145,15 +145,8 @@ class kana {
 
         ["ぴゃ", "pya", true],
         ["ぴゅ", "pyu", true],
-        ["ぴょ", "pyo", true],
-
-        ["みゃ", "mya", true],
-        ["みゅ", "myu", true],
-        ["みょ", "myo", true],
-
-        ["りゃ", "rya", true],
-        ["りゅ", "ryu", true],
-        ["りょ", "ryo", true],
+        ["ぴょ", "pyo", true]
+   
     ];
 
     katakana = [
@@ -162,46 +155,56 @@ class kana {
         ["ウ", "u", true],
         ["エ", "e", true],
         ["オ", "o", true],
+
         ["カ", "ka", true],
         ["キ", "ki", true],
         ["ク", "ku", true],
         ["ケ", "ke", true],
         ["コ", "ko", true],
+
         ["サ", "sa", true],
         ["シ", "shi", true],
         ["ス", "su", true],
         ["セ", "se", true],
         ["ソ", "so", true],
+
         ["タ", "ta", true],
         ["チ", "chi", true],
         ["ツ", "tsu", true],
         ["テ", "te", true],
         ["ト", "to", true],
+
         ["ナ", "na", true],
         ["ニ", "ni", true],
         ["ヌ", "nu", true],
         ["ネ", "ne", true],
         ["ノ", "no", true],
+
         ["ハ", "ha", true],
         ["ヒ", "hi", true],
         ["フ", "fu", true],
         ["ヘ", "he", true],
         ["ホ", "ho", true],
+
         ["マ", "ma", true],
         ["ミ", "mi", true],
         ["ム", "mu", true],
         ["メ", "me", true],
         ["モ", "mo", true],
+
         ["ヤ", "ya", true],
         ["ユ", "yu", true],
         ["ヨ", "yo", true],
+
         ["ラ", "ra", true],
         ["リ", "ri", true],
         ["ル", "ru", true],
         ["レ", "re", true],
         ["ロ", "ro", true],
+
         ["ワ", "wa", true],
         ["ヲ", "wo", true],
+
         ["ン", "n", true]
     ];
 
@@ -209,24 +212,35 @@ class kana {
         ["キャ", "kya", true],
         ["キュ", "kyu", true],
         ["キョ", "kyo", true],
+
         ["ギャ", "gya", true],
         ["ギュ", "gyu", true],
         ["ギョ", "gyo", true],
+
         ["シャ", "sha", true],
         ["シュ", "shu", true],
         ["ショ", "sho", true],
-        ["ジャ", "ja", true],
-        ["ジュ", "ju", true],
-        ["ジョ", "jo", true],
+
         ["チャ", "cha", true],
         ["チュ", "chu", true],
         ["チョ", "cho", true],
+
         ["ニャ", "nya", true],
         ["ニュ", "nyu", true],
         ["ニョ", "nyo", true],
+
         ["ヒャ", "hya", true],
         ["ヒュ", "hyu", true],
-        ["ヒョ", "hyo", true]
+        ["ヒョ", "hyo", true],
+
+        ["ミャ", "mya", true],
+        ["ミュ", "myu", true],
+        ["ミョ", "myo", true],
+
+
+        ["リャ", "rya", true],
+        ["リュ", "ryu", true],
+        ["リョ", "ryo", true]
     ];
 
     katakanaDakuon = [
@@ -235,21 +249,25 @@ class kana {
         ["グ", "gu", true],
         ["ゲ", "ge", true],
         ["ゴ", "go", true],
+
         ["ザ", "za", true],
         ["ジ", "ji", true],
         ["ズ", "zu", true],
         ["ゼ", "ze", true],
         ["ゾ", "zo", true],
+
         ["ダ", "da", true],
         ["ヂ", "ji", true],
         ["ヅ", "zu", true],
         ["デ", "de", true],
         ["ド", "do", true],
+
         ["バ", "ba", true],
         ["ビ", "bi", true],
         ["ブ", "bu", true],
         ["ベ", "be", true],
         ["ボ", "bo", true],
+
         ["パ", "pa", true],
         ["ピ", "pi", true],
         ["プ", "pu", true],
@@ -261,14 +279,14 @@ class kana {
         ["ビャ", "bya", true],
         ["ビュ", "byu", true],
         ["ビョ", "byo", true],
+
         ["ピャ", "pya", true],
         ["ピュ", "pyu", true],
         ["ピョ", "pyo", true],
-        ["ミャ", "mya", true],
-        ["ミュ", "myu", true],
-        ["ミョ", "myo", true],
-        ["リャ", "rya", true],
-        ["リュ", "ryu", true],
-        ["リョ", "ryo", true]
+
+        ["ジャ", "ja", true],
+        ["ジュ", "ju", true],
+        ["ジョ", "jo", true],
+
     ];
 }
