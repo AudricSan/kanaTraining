@@ -15,6 +15,7 @@ window.onkeydown = function (key) {
         case "e":
         case "o":
 
+        case "y":
         case "b":
         case "c":
         case "d":
@@ -36,7 +37,6 @@ window.onkeydown = function (key) {
         case "x":
         case "z":
 
-
         //Uppercase
         case "A":
         case "I":
@@ -44,6 +44,7 @@ window.onkeydown = function (key) {
         case "E":
         case "O":
 
+        case "Y":
         case "B":
         case "C":
         case "D":
@@ -358,12 +359,10 @@ function incrementGood() {
 
 //increment total
 function incrementTotal() {
-
     b = parseInt(totalPoint.innerText);
     b += 1;
 
     totalPoint.innerText = b.toString();
-
     startGame();
 };
 
