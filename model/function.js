@@ -230,6 +230,7 @@ function selectDificulty(id) {
         }
         //console.log(dificulty);
     }
+    startGame();
 }
 
 //GAME RUN
