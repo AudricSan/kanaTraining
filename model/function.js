@@ -290,21 +290,28 @@ function startGame() {
 }
 
 //notification
-function createNotification(txt) {
+function createNotification(txt, c) {
     const notif = document.createElement("div");
+    const correct = document.createElement('span');
+
     notif.classList.add("toast");
 
-    notif.innerText = txt;
+    notif.innerText = txt + " ";
+
+    if (c != undefined) {
+        correct.innerText = "\"" + c + "\"";
+    }
 
     container.appendChild(notif);
+    notif.appendChild(correct);
 
     setTimeout(() => {
         notif.remove();
-    }, 3000);
+    }, 1000);
 }
 
 //Answerd checker
-function checkAnswerd(){
+function checkAnswerd() {
     //console.log(input);
     //console.log(input.innerHTML);
     //console.log(selectedCharacter);
@@ -312,34 +319,43 @@ function checkAnswerd(){
 
     let a = input.innerHTML
     let b = selectedCharacter[1];
-    //console.log(b);
+    console.log(b);
 
     c = b.split("-");
-    //console.log(c);
+    console.log(c);
 
-    c.forEach(e => {
-        if(a === e){
-            //console.log('Good');
+    d = c.indexOf(a);
+    console.log(d);
+
+    if (d != -1) {
+        e = c[d];
+        console.log(e);
+        if (a === e) {
+            console.log('Good');
             input.textContent = "";
             goodAnswerd();
-        }else{
-            //console.log('not Good');
+        } else {
+            console.log('not Good');
             input.textContent = "";
             badAnswerd();
-        }  
-    });
+        }
+    } else {
+        console.log('not Good');
+        input.textContent = "";
+        badAnswerd();
+    }
 }
 
 //If is good
-function goodAnswerd(){
+function goodAnswerd() {
     createNotification("good ! " + "+1");
     incrementGood();
 }
 
 //if is not!
-function badAnswerd(){
+function badAnswerd() {
     let a = selectedCharacter[1];
-    createNotification("Nop bad answerd " + "the good one is " + a);
+    createNotification("Nop bad answerd, the good one is", a);
     incrementTotal();
 }
 
@@ -366,12 +382,12 @@ function incrementTotal() {
 };
 
 //share to Twitter
-twitter.addEventListener('click', event =>{    
+twitter.addEventListener('click', event => {
     var b = twitter.getAttribute('href');
 
     var good = myPoint.textContent;
     var total = totalPoint.textContent;
 
-    b = "https://twitter.com/intent/tweet?text=I just scored " + good + " out of " +  total + " in my Hiragana Training. Can you do better? http://www.hiragana.training";
+    b = "https://twitter.com/intent/tweet?text=I just scored " + good + " out of " + total + " in my Hiragana Training. Can you do better? http://www.hiragana.training";
     twitter.setAttribute("href", b);
 })
