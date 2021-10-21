@@ -65,7 +65,6 @@ window.onkeydown = function (key) {
         case "W":
         case "X":
         case "Z":
-
             if (input.textContent.length < 3) {
                 input.textContent += mykey;
             }
