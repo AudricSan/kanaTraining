@@ -388,6 +388,6 @@ twitter.addEventListener('click', event => {
     var good = myPoint.textContent;
     var total = totalPoint.textContent;
 
-    b = "https://twitter.com/intent/tweet?text=I just scored " + good + " out of " + total + " in my Hiragana Training. Can you do better? http://www.hiragana.training";
+    b = "https://twitter.com/intent/tweet?text=I just scored " + good + " out of " + total + " in my Hiragana Training. Can you do better? http://kana.audricrosier.be/view/index.html";
     twitter.setAttribute("href", b);
 })
