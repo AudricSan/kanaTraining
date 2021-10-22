@@ -470,3 +470,11 @@ input {
 .check:after {
   clear: both;
 }
+
+.submit{
+  display: none;
+}
+
+.forms{
+  padding-top: 20px;
+}
