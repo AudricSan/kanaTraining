@@ -14,58 +14,66 @@
   <link rel="stylesheet" href="ellements/css/index.css" />
   <link rel="stylesheet" href="ellements/css/checkbox.css" />
   <link rel="stylesheet" href="ellements/css/notification.css" />
-
+  
+  <link rel="stylesheet" href="ellements/css/hambergermenu.css" />
   <link rel="stylesheet" href="ellements/css/max600.css" />
 
   <!-- ICON CSS -->
   <script src="https://kit.fontawesome.com/eb747bd21c.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
-  
+
   <link rel="icon" type="image/svg+xml" href="ellements/img/favicon/favicon.svg">
   <link rel="icon" type="image/png" href="ellements/img/favicon/favicon.png">
 </head>
 
 <body>
-  <div class="check">
+  <a href="#menu" id="toggle"><span></span></a>
 
-    <input type="checkbox" class="switch" id="hiragana" name="cc" onchange="selectDificulty(this.id)" checked />
-    <label for="hiragana">Hiragana</label>
+  <div id="menu">
+    <ul>
+      <div class="check">
 
-    <br>
+        <input type="checkbox" class="switch" id="hiragana" name="cc" onchange="selectDificulty(this.id)" checked />
+        <label for="hiragana">Hiragana</label>
 
-    <input type="checkbox" class="switch" id="hiraganaCombo" name="cc" onchange="selectDificulty(this.id)" />
-    <label for="hiraganaCombo">Hiragana Combo</label>
+        <br>
 
-    <br>
+        <input type="checkbox" class="switch" id="hiraganaCombo" name="cc" onchange="selectDificulty(this.id)" />
+        <label for="hiraganaCombo">Hiragana Combo</label>
 
-    <input type="checkbox" class="switch" id="hiraganaDakuon" name="cc" onchange="selectDificulty(this.id)" />
-    <label for="hiraganaDakuon">Hiragana Dakuon</label>
+        <br>
 
-    <br>
+        <input type="checkbox" class="switch" id="hiraganaDakuon" name="cc" onchange="selectDificulty(this.id)" />
+        <label for="hiraganaDakuon">Hiragana Dakuon</label>
 
-    <input type="checkbox" class="switch" id="hiraganaDakuonCombo" name="cc" onchange="selectDificulty(this.id)" />
-    <label for="hiraganaDakuonCombo">Hiragana Dakuon Combo </label>
+        <br>
 
-    <p class="divider">---------------------------------------</p>
+        <input type="checkbox" class="switch" id="hiraganaDakuonCombo" name="cc" onchange="selectDificulty(this.id)" />
+        <label for="hiraganaDakuonCombo">Hiragana Dakuon Combo </label>
 
-    <input type="checkbox" class="switch" id="katakana" name="cc" onchange="selectDificulty(this.id)" />
-    <label for="katakana">Katakana</label>
+        <p class="divider">---------------------------------------</p>
 
-    <br>
+        <input type="checkbox" class="switch" id="katakana" name="cc" onchange="selectDificulty(this.id)" />
+        <label for="katakana">Katakana</label>
 
-    <input type="checkbox" class="switch" id="katakanaCombo" name="cc" onchange="selectDificulty(this.id)" />
-    <label for="katakanaCombo">Katakana Combo</label>
+        <br>
 
-    <br>
+        <input type="checkbox" class="switch" id="katakanaCombo" name="cc" onchange="selectDificulty(this.id)" />
+        <label for="katakanaCombo">Katakana Combo</label>
 
-    <input type="checkbox" class="switch" id="katakanaDakuon" name="cc" onchange="selectDificulty(this.id)" />
-    <label for="katakanaDakuon">Katakana Dakuon</label>
+        <br>
 
-    <br>
+        <input type="checkbox" class="switch" id="katakanaDakuon" name="cc" onchange="selectDificulty(this.id)" />
+        <label for="katakanaDakuon">Katakana Dakuon</label>
 
-    <input type="checkbox" class="switch" id="katakanaDakuonCombo" name="cc" onchange="selectDificulty(this.id)" />
-    <label for="katakanaDakuonCombo">Katakana Dakuon Combo </label>
+        <br>
+
+        <input type="checkbox" class="switch" id="katakanaDakuonCombo" name="cc" onchange="selectDificulty(this.id)" />
+        <label for="katakanaDakuonCombo">Katakana Dakuon Combo </label>
+      </div>
+    </ul>
   </div>
+
 
   <a href="#" class="help">HELP
     <span class="material-icons-round iconhelp">
@@ -74,7 +82,7 @@
   </a>
 
   <div id="notification">
-  <!-- <div class="toast">Nop bad answerd, the good one is <span>"A"</span> </div>
+    <!-- <div class="toast">Nop bad answerd, the good one is <span>"A"</span> </div>
   -->
   </div>
 
@@ -98,7 +106,7 @@
     <span class="material-icons-round iconscore">sports_score</span>
 
     <span class="good">0</span>/<span class="total">0</span>
-  
+
     <a href="" target="_blank" class="twitter-share">
       <i class="fa fa-twitter"> </i>
       <span>SHARE ON TWITTER</span>
@@ -114,12 +122,13 @@
     The github project
     <span class="fab fa-github icongit"></span>
   </a>
-  
+
 
   <script src="../model/class/kana.js"></script>
   <script src="../model/const.js"></script>
   <script src="../model/function.js"></script>
   <script src="ellements/js/app.js"></script>
+  <script src="ellements/js/hamberger.js"></script>
 </body>
 
 </html>
