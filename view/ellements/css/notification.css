@@ -1,17 +1,21 @@
 #notification {
     position: fixed;
-    bottom: 50%;
+    bottom: 30%;
     z-index: 99999;
 }
 
 .toast {
     background-color: #99a7f1;
     border-radius: 15px;
+
+
+
     color: #fff;
     padding: 2rem;
     margin: 1rem;
 
     text-align: center;
+    font-size: 1.2em;
 }
 
 .toast span{
