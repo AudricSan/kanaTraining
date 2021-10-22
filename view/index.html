@@ -84,7 +84,11 @@
     <span class="material-icons-round iconkeyboard">keyboard_double_arrow_left</span>
 
     </span>
-    <p class="input"></p>
+    <!-- <p class="input"></p> -->
+    <form class="forms" action="#" onsubmit="checkAnswerd(); return false" autocomplete="off">
+      <input name="input" type="text" class="input" autofocus maxlength="3">
+      <input type="submit" class="submit">
+    </form>
   </div>
 
   <div class="score">
@@ -101,10 +105,7 @@
 
   <a href="https://twitter.com/AudricSan" target="_blank" class="author">
     by Audric_San
-
-    <span class="material-icons-round iconface">
-      face
-    </span>
+    <span class="material-icons-round iconface">face</span>
   </a>
 
   <script src="../model/class/kana.js"></script>
