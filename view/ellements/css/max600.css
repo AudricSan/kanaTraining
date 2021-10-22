@@ -10,9 +10,7 @@
         zoom: 90%;
     }
 
-    .check{
-      display: none;
-    }
+
 
     .author{
       display: none;
@@ -28,8 +26,8 @@
       letter-spacing: 0.2rem;
       font-weight: 400;
       position: absolute;
-      top: 75%;
-      left: 50%;
+      top: 80%;
+      left: 43%;
       text-align: center;
       align-items: center;
     }
@@ -46,8 +44,8 @@
       text-align: center;
     }
     
-    .iconscore{
-      display: none;
+    .iconscore, .material-icons-round span{
+      display: none !important;
     }
 
     .twitter-share{
@@ -57,4 +55,6 @@
     .help {
       display: none;
     }
+
+    
 }
