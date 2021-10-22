@@ -1,10 +1,10 @@
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
   input[type='checkbox']{
-    --active: #5c6bc2;
+    --active: #84D1A0;
     --active-inner: #fff;
     /*--focus: 2px rgba(39, 94, 254, .3);*/
     --border: #bbc1e1;
-    --border-hover: #404b8a;
+    --border-hover: #4bce7b;
     --background: #fff;
     --disabled: #f6f8ff;
     --disabled-inner: #e1e6f9;
