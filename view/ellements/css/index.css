@@ -192,31 +192,6 @@ p.test-skills {
   color: #5c6bc2 !important;
 }
 
-.checkbox {
-  border: 1px solid #5c6bc2;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  float: left;
-}
-
-.checkbox:checked {
-  border-color: #5c6bc2;
-  color: #5c6bc2;
-  background-color: #5c6bc2;
-}
-
-.checkbox, .checkbox label {
-  float: left;
-  margin-left: 5px;
-  margin-top: 6px;
-  color: #b7b8b9;
-}
-
-.checkbox:checked, .checkbox:checked label {
-  color: #5c6bc2;
-}
-
 label {
   font-weight: 500;
   font-size: 0.75rem;
@@ -236,16 +211,6 @@ input {
   z-index: 999;
   left: 20px;
   top: 20px;
-}
-
-.check:before,
-.check:after {
-  content: ' ';
-  display: table;
-}
-
-.check:after {
-  clear: both;
 }
 
 .submit{
