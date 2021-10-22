@@ -10,7 +10,7 @@
 
 
 
-    color: #fff;
+    color: #000;
     padding: 2rem;
     margin: 1rem;
 
@@ -19,5 +19,5 @@
 }
 
 .toast span{
-    color: rgb(182, 255, 87);
+    color: #C6FBD8;
 }
