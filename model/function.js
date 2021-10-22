@@ -4,6 +4,7 @@ function getRandomInteger(min, max) {
 }
 
 //keyboard listen
+/*
 window.onkeydown = function (key) {
     let mykey = key['key'];
     //console.log(mykey);
@@ -87,6 +88,7 @@ window.onkeydown = function (key) {
             break;
     }
 }
+*/
 
 //Hiragana Function
 function getRandomHiragana() {
@@ -318,32 +320,40 @@ function checkAnswerd() {
     //console.log(selectedCharacter);
     //console.log(selectedCharacter[1]);
 
-    let a = input.innerHTML
+    let a = input.value.toLowerCase()
     let b = selectedCharacter[1];
-    console.log(b);
+    //console.log("input value");
+    //console.log(a);
+    //console.log("character value");
+    //console.log(b);
 
     c = b.split("-");
-    console.log(c);
+    //console.log("character unicValue");
+    //console.log(c);
 
     d = c.indexOf(a);
-    console.log(d);
+    //console.log("index of" + d);
+    //console.log(d);
 
     if (d != -1) {
         e = c[d];
-        console.log(e);
+        //console.log(e);
         if (a === e) {
-            console.log('Good');
-            input.textContent = "";
+            //console.log('Good');
+            input.value = "";
             goodAnswerd();
+            return true;
         } else {
-            console.log('not Good');
-            input.textContent = "";
+            //console.log('not Good');
+            input.value = "";
             badAnswerd();
+            return false;
         }
     } else {
-        console.log('not Good');
-        input.textContent = "";
+        //console.log('not Good');
+        input.value = "";
         badAnswerd();
+        return false;
     }
 }
 
