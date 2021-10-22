@@ -46,7 +46,7 @@
     <input type="checkbox" class="switch" id="hiraganaDakuonCombo" name="cc" onchange="selectDificulty(this.id)" />
     <label for="hiraganaDakuonCombo">Hiragana Dakuon Combo </label>
 
-    <br>
+    <p class="divider">---------------------------------------</p>
 
     <input type="checkbox" class="switch" id="katakana" name="cc" onchange="selectDificulty(this.id)" />
     <label for="katakana">Katakana</label>
@@ -74,7 +74,8 @@
   </a>
 
   <div id="notification">
-  <div class="toast">Nop bad answerd, the good one is <span>"A"</span> </div>
+  <!-- <div class="toast">Nop bad answerd, the good one is <span>"A"</span> </div>
+  -->
   </div>
 
   <div class="hiragana-symbol">
@@ -86,7 +87,6 @@
     <span class="material-icons-round iconkeyboard">keyboard_double_arrow_left</span>
 
     </span>
-    <!-- <p class="input"></p> -->
     <form class="forms" action="#" onsubmit="checkAnswerd(); return false" autocomplete="off">
       <input name="input" type="text" class="input" autofocus maxlength="3">
       <input type="submit" class="submit">
@@ -109,6 +109,12 @@
     by Audric_San
     <span class="material-icons-round iconface">face</span>
   </a>
+
+  <a href="https://github.com/AudricSan/kakaTraining" target="_blank" class="git">
+    The github project
+    <span class="fab fa-github icongit"></span>
+  </a>
+  
 
   <script src="../model/class/kana.js"></script>
   <script src="../model/const.js"></script>
