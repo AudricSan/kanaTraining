@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     html {
         font-size: 14px;
         -webkit-touch-callout: none;
@@ -8,5 +8,53 @@
         -ms-user-select: none;
         user-select: none;
         zoom: 90%;
-      }
+    }
+
+
+
+    .author{
+      display: none;
+    }
+
+    .git{
+      display: none;
+    }
+
+    .score, .iconscore {
+      text-align: center;
+      color: #b7b8b9;
+      letter-spacing: 0.2rem;
+      font-weight: 400;
+      position: absolute;
+      top: 80%;
+      left: 43%;
+      text-align: center;
+      align-items: center;
+    }
+
+    .sc {
+      font-weight: 500;
+      font-size: 0.75rem;
+      letter-spacing: 0.1rem;
+      margin-bottom: 0.5rem;
+      display: block;
+      color: #000;
+
+      align-items: center;
+      text-align: center;
+    }
+    
+    .iconscore, .material-icons-round span{
+      display: none !important;
+    }
+
+    .twitter-share{
+      display: none;
+    }
+
+    .help {
+      display: none;
+    }
+
+    
 }

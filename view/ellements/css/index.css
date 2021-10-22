@@ -118,23 +118,6 @@ p.test-skills {
   color: #868686;
 }
 
-.author{
-  margin-bottom: 0.5rem;
-  text-decoration: none;
-
-  position: fixed;
-  right: 40px;
-  bottom: 12px;
-  color: #b7b8b9;
-  font-weight: 400;
-}
-
-.iconface{
-  position: inherit;
-  right: 10px;
-  bottom: 16px;
-}
-
 .score .total {
   color: #5c6bc2;
 }
@@ -188,10 +171,6 @@ p.test-skills {
   color: #5c6bc2 !important;
 }
 
-.author:hover, .author:hover span{
-  color: #5c6bc2 !important;
-}
-
 label {
   font-weight: 500;
   font-size: 0.75rem;
@@ -223,4 +202,55 @@ input {
 
 .hidden{
   opacity: 0;
+}
+
+.author{
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  color: #b7b8b9;
+  font-weight: 400;
+}
+
+.author:hover, .author:hover span{
+  color: #84D1A0 !important;
+}
+
+.iconface{
+  position: inherit;
+
+  right: 10px;
+  bottom: 44px;
+}
+
+.git{
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  margin-top: 10px;
+  position: fixed;
+  right: 40px;
+  bottom: 12px;
+  color: #b7b8b9;
+  font-weight: 400;
+}
+
+.git:hover, .git:hover span{
+  color: #84D1A0 !important;
+}
+
+.icongit{
+  position: inherit;
+
+  right: 11px;
+  bottom: 17px;
+  font-size: 1.5em;
+}
+
+.divider{
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
