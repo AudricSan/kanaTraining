@@ -1,4 +1,5 @@
 var input = document.querySelector('.input');
+
 var character = document.querySelector('.character');
 
 var dificulty = ['hiragana'];
