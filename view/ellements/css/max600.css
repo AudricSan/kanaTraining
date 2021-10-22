@@ -21,14 +21,14 @@
     }
 
     .score, .iconscore {
-      text-align: center;
+      text-align: right;
       color: #b7b8b9;
       letter-spacing: 0.2rem;
       font-weight: 400;
       position: absolute;
-      top: 80%;
-      left: 43%;
-      text-align: center;
+      top: 10%;
+      right: 10%;
+      text-align: right;
       align-items: center;
     }
 
@@ -41,7 +41,7 @@
       color: #000;
 
       align-items: center;
-      text-align: center;
+      text-align: right;
     }
     
     .iconscore, .material-icons-round span{
