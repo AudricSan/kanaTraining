@@ -264,4 +264,61 @@ input {
 
 .input{
   max-width: 400px;
+  border-radius: 50px;
+  padding: 10px !important;
+  font-size: 2.5rem !important;
+}
+
+#help-spawner{
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  max-height: 600px;
+  overflow-y: scroll;
+
+  background-color: #f6f8ff;
+  border-radius: 20px;
+  z-index: 99999;
+}
+
+.items {
+  padding: 0 0 60px 0;
+  margin: 30px 0 0 0;
+  text-align: center;
+  max-width: 300px;
+}
+
+
+.items li {
+  padding: 0;
+  margin: 0;
+  width: 20%;
+  float: left;
+  border-bottom: 2px solid #A0ABB6;
+  list-style-type: none;
+}
+
+.items li .kana {
+  padding-top: 1rem;
+  line-height: 2rem;
+  font-size: 2rem;
+}
+
+.items li .romanji {
+  font-size: .85rem;
+  line-height: 1.5rem;
+  color: #C97D7A;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+.helpcloser{
+  position: absolute;
+  top: 10px;
+  right: 50px;
+
+  z-index: 99999;
+
+  background-color: #f6f8ff;
+  border-radius: 100%;
 }
