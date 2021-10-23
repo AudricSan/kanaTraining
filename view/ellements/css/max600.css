@@ -10,8 +10,6 @@
         zoom: 90%;
     }
 
-
-
     .author{
       display: none;
     }
@@ -23,13 +21,16 @@
     .score, .iconscore {
       text-align: right;
       color: #b7b8b9;
+      
       letter-spacing: 0.2rem;
       font-weight: 400;
       position: absolute;
       top: 10%;
       right: 10%;
+
       text-align: right;
       align-items: center;
+      z-index: -999;
     }
 
     .sc {
@@ -43,7 +44,7 @@
       align-items: center;
       text-align: right;
     }
-    
+
     .iconscore, .material-icons-round span{
       display: none !important;
     }
@@ -56,5 +57,7 @@
       display: none;
     }
 
-    
+    .input{
+      max-width: 200px;
+    }
 }
