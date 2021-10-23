@@ -36,7 +36,7 @@ a:active{
 
 a:focus,
 a:visited{
-  color: #b7b8b9;
+  color: #A0ABB6;
 }
 
 .hiragana-symbol {
@@ -102,7 +102,7 @@ p.test-skills {
   position: fixed;
   left: 20px;
   bottom: 12px;
-  color: #b7b8b9;
+  color: #A0ABB6;
   letter-spacing: 0.2rem;
   font-weight: 400;
   padding-bottom: 8px;
@@ -150,7 +150,7 @@ p.test-skills {
   position: fixed;
   top: 20px;
   right: 20px;
-  color: #b7b8b9;
+  color: #A0ABB6;
   text-decoration: none;
   z-index: 5;
   text-transform: uppercase;
@@ -211,7 +211,7 @@ input {
   position: fixed;
   right: 40px;
   bottom: 40px;
-  color: #b7b8b9;
+  color: #A0ABB6;
   font-weight: 400;
 }
 
@@ -233,7 +233,7 @@ input {
   position: fixed;
   right: 40px;
   bottom: 12px;
-  color: #b7b8b9;
+  color: #A0ABB6;
   font-weight: 400;
 }
 
