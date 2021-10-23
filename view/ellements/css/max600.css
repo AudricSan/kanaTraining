@@ -60,4 +60,12 @@
     .input{
       max-width: 200px;
     }
+
+    .logo{
+      width: 100px;
+      height: auto;
+    
+      padding-left: 0px;
+      padding-top: 50px;
+    }
 }
