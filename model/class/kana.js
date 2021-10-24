@@ -150,7 +150,7 @@ class kana {
     ];
 
     katakana = [
-        ["ア", "a", true]
+        ["ア", "a", true],
         ["イ", "i", true],
         ["ウ", "u", true],
         ["エ", "e", true],

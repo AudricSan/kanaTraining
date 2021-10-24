@@ -11,6 +11,8 @@
   <link rel="author" href="@audricrosier" />
   <meta name="description" content="Simple application that helps you learn Kana's for free." />
 
+
+
   <link rel="stylesheet" href="ellements/css/index.css" />
   <link rel="stylesheet" href="ellements/css/checkbox.css" />
   <link rel="stylesheet" href="ellements/css/notification.css" />
@@ -22,13 +24,22 @@
   <script src="https://kit.fontawesome.com/eb747bd21c.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
 
-  <link rel="icon" type="image/svg+xml" href="ellements/img/favicon/favicon.svg">
-  <link rel="icon" type="image/png" href="ellements/img/favicon/favicon.png">
+  <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="180x180" href="ellements/img/favicon/apple-touch-icon.png?v=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="ellements/img/favicon/favicon-32x32.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="ellements/img/favicon/favicon-16x16.png?v=1">
+  <link rel="manifest" href="ellements/img/favicon/site.webmanifest?v=1">
+  <link rel="mask-icon" href="ellements/img/favicon/safari-pinned-tab.svg?v=1" color="#5bbad5">
+  <link rel="shortcut icon" href="ellements/img/vavicon/favicon.ico?v=1">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
-  <a href="#menu" id="toggle"><span></span></a>
+  <img class="logo" src="ellements/img/Blue - Green.png" alt="Grapefruit slice atop a pile of other slices">
 
+  <a href="#menu" id="toggle"><span></span></a>
+  
   <div id="menu">
     <ul>
       <div class="check">
@@ -76,9 +87,12 @@
 
 
   <a href="#" class="help">HELP
-    <span class="material-icons-round iconhelp">
-      info
-    </span>
+    <span class="material-icons-round iconhelp">info</span>
+  </a>
+
+  <div id="help-spawner"></div>
+  <a class="hidden helpcloser">
+    <span class="material-icons-round">close</span>
   </a>
 
   <div id="notification">

@@ -402,3 +402,75 @@ twitter.addEventListener('click', event => {
     b = "https://twitter.com/intent/tweet?text=I just scored " + good + " out of " + total + " in my Hiragana Training. Can you do better? http://kana.audricrosier.be/view/index.html";
     twitter.setAttribute("href", b);
 })
+
+function getAllKana() {
+    //console.log(dificulty);
+    //console.log(helpContainer);
+
+    //dificulty = ['hiragana', 'katakana'];
+    let helpTable = [];
+
+    dificulty.forEach(e => {
+        helpTable.push(hiragana[e]);
+    });
+
+    //console.log(helpTable);
+    const ul = document.createElement('ul');
+    ul.classList.add("items");
+
+    helpContainer.appendChild(ul);
+
+    helpTable.forEach(e => {
+        e.forEach(a => {
+            //console.log(a);
+            const li = document.createElement('li');
+            const helpHiragana = document.createElement("div");
+            const helpRomanji = document.createElement('div');
+
+            helpHiragana.classList.add("kana");
+            helpRomanji.classList.add("romanji");
+
+            helpHiragana.innerText = a[0];
+            helpRomanji.innerText = a[1];
+
+            ul.appendChild(li);
+            li.appendChild(helpHiragana);
+            li.appendChild(helpRomanji);
+        });
+    });
+}
+
+function getSpeHelp() {
+    console.log(selectedCharacter);
+    //console.log(helpTable);
+    const ul = document.createElement('ul');
+    ul.classList.add("items");
+
+    helpContainer.appendChild(ul);
+
+    const li = document.createElement('li');
+    const helpHiragana = document.createElement("div");
+    const helpRomanji = document.createElement('div');
+
+    helpHiragana.classList.add("kana");
+    helpRomanji.classList.add("romanji");
+
+    helpHiragana.innerText = selectedCharacter[0];
+    helpRomanji.innerText = selectedCharacter[1];
+
+    ul.appendChild(li);
+    li.appendChild(helpHiragana);
+    li.appendChild(helpRomanji);
+}
+
+//share to Twitter
+helpbtn.addEventListener('click', event => {
+    closer.classList.remove('hidden')
+    getAllKana();
+})
+
+closer.addEventListener('click', event => {
+    todel = helpContainer.children
+    helpContainer.removeChild(todel[0]);
+    closer.classList.add('hidden');
+})
