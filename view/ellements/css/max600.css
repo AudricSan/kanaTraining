@@ -62,6 +62,8 @@
     }
 
     .logo{
+      position: absolute;
+      top: 5px;
       width: 100px;
       height: auto;
     
