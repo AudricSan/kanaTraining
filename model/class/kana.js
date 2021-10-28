@@ -237,7 +237,6 @@ class kana {
         ["ミュ", "myu", true],
         ["ミョ", "myo", true],
 
-
         ["リャ", "rya", true],
         ["リュ", "ryu", true],
         ["リョ", "ryo", true]
@@ -251,14 +250,14 @@ class kana {
         ["ゴ", "go", true],
 
         ["ザ", "za", true],
-        ["ジ", "ji", true],
+        ["ジ", "zi-ji", true],
         ["ズ", "zu", true],
         ["ゼ", "ze", true],
         ["ゾ", "zo", true],
 
         ["ダ", "da", true],
         ["ヂ", "ji", true],
-        ["ヅ", "zu", true],
+        ["ヅ", "du-zu-dzu", true],
         ["デ", "de", true],
         ["ド", "do", true],
 
@@ -287,6 +286,5 @@ class kana {
         ["ジャ", "ja", true],
         ["ジュ", "ju", true],
         ["ジョ", "jo", true],
-
     ];
 }

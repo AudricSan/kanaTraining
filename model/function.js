@@ -3,93 +3,6 @@ function getRandomInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-//keyboard listen
-/*
-window.onkeydown = function (key) {
-    let mykey = key['key'];
-    //console.log(mykey);
-    switch (mykey) {
-        //Lowercase
-        case "a":
-        case "i":
-        case "u":
-        case "e":
-        case "o":
-
-        case "y":
-        case "b":
-        case "c":
-        case "d":
-        case "f":
-        case "g":
-        case "h":
-        case "j":
-        case "k":
-        case "l":
-        case "m":
-        case "n":
-        case "p":
-        case "q":
-        case "r":
-        case "s":
-        case "t":
-        case "v":
-        case "w":
-        case "x":
-        case "z":
-
-        //Uppercase
-        case "A":
-        case "I":
-        case "U":
-        case "E":
-        case "O":
-
-        case "Y":
-        case "B":
-        case "C":
-        case "D":
-        case "F":
-        case "G":
-        case "H":
-        case "J":
-        case "K":
-        case "L":
-        case "M":
-        case "N":
-        case "P":
-        case "Q":
-        case "R":
-        case "S":
-        case "T":
-        case "V":
-        case "W":
-        case "X":
-        case "Z":
-            if (input.textContent.length < 3) {
-                input.textContent += mykey;
-            }
-            break;
-
-        case 'Enter':
-            checkAnswerd();
-            break;
-
-        case 'Backspace':
-            input.textContent = input.textContent.substring(0, input.textContent.length - 1);
-            break;
-
-        case 'Escape':
-            input.textContent = "";
-            break;
-
-        default:
-            //console.log(key)
-            break;
-    }
-}
-*/
-
 //Hiragana Function
 function getRandomHiragana() {
     let selectedHiragana;
@@ -217,7 +130,7 @@ function getRandomkatakanaDakuonCombo() {
     }
 }
 
-//add / Remove difficulty
+//add-Remove difficulty
 function selectDificulty(id) {
     let ellement = document.getElementById(id);
     if (ellement.checked) {
@@ -238,6 +151,7 @@ function selectDificulty(id) {
 //GAME RUN
 function startGame() {
     const int = getRandomInteger(0, dificulty.length - 1)
+    //console.log(dificulty);
     //console.log(dificulty[int]);
     switch (dificulty[int]) {
         case "hiragana":
@@ -376,11 +290,7 @@ function incrementGood() {
     a += 1;
     myPoint.innerText = a.toString();
 
-    b = parseInt(totalPoint.innerText);
-    b += 1;
-    totalPoint.innerText = b.toString();
-
-    startGame();
+    incrementTotal();
 };
 
 //increment total
@@ -389,6 +299,7 @@ function incrementTotal() {
     b += 1;
 
     totalPoint.innerText = b.toString();
+
     startGame();
 };
 
@@ -399,7 +310,7 @@ twitter.addEventListener('click', event => {
     var good = myPoint.textContent;
     var total = totalPoint.textContent;
 
-    b = "https://twitter.com/intent/tweet?text=I just scored " + good + " out of " + total + " in my Hiragana Training. Can you do better? http://kana.audricrosier.be/view/index.html";
+    b = "https://twitter.com/intent/tweet?text=" + encodeURIComponent("I just scored " + good + " out of " + total + " in my Hiragana Training. \nCan you do better? https://kana.audricrosier.be");
     twitter.setAttribute("href", b);
 })
 
@@ -440,30 +351,7 @@ function getAllKana() {
     });
 }
 
-function getSpeHelp() {
-    console.log(selectedCharacter);
-    //console.log(helpTable);
-    const ul = document.createElement('ul');
-    ul.classList.add("items");
-
-    helpContainer.appendChild(ul);
-
-    const li = document.createElement('li');
-    const helpHiragana = document.createElement("div");
-    const helpRomanji = document.createElement('div');
-
-    helpHiragana.classList.add("kana");
-    helpRomanji.classList.add("romanji");
-
-    helpHiragana.innerText = selectedCharacter[0];
-    helpRomanji.innerText = selectedCharacter[1];
-
-    ul.appendChild(li);
-    li.appendChild(helpHiragana);
-    li.appendChild(helpRomanji);
-}
-
-//share to Twitter
+//Open help
 helpbtn.addEventListener('click', event => {
     closer.classList.remove('hidden')
     getAllKana();
