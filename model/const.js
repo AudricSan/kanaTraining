@@ -17,3 +17,5 @@ const twitter = document.querySelector('.twitter-share');
 
 const helpbtn = document.querySelector('.help');
 const closer = document.querySelector('.helpcloser');
+
+const delay = 1000;
