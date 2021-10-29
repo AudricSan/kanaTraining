@@ -21,7 +21,6 @@ function getRandomHiragana() {
             }
         }
     }
-
 }
 
 function getRandomhiraganaCombo() {
@@ -224,50 +223,58 @@ function createNotification(txt, c) {
 
     setTimeout(() => {
         notif.remove();
-    }, 1000);
+    }, delay);
 }
 
 //Answerd checker
 function checkAnswerd() {
-    //console.log(input);
-    //console.log(input.innerHTML);
-    //console.log(selectedCharacter);
-    //console.log(selectedCharacter[1]);
 
-    let a = input.value.toLowerCase()
-    let b = selectedCharacter[1];
-    //console.log("input value");
-    //console.log(a);
-    //console.log("character value");
-    //console.log(b);
+    
+    if(document.getElementsByClassName("toast").length === 0){
+        //console.log('coucou');
+        //console.log(input);
+        //console.log(input.innerHTML);
+        //console.log(selectedCharacter);
+        //console.log(selectedCharacter[1]);
 
-    c = b.split("-");
-    //console.log("character unicValue");
-    //console.log(c);
+        let a = input.value.toLowerCase()
+        let b = selectedCharacter[1];
+        //console.log("input value");
+        //console.log(a);
+        //console.log("character value");
+        //console.log(b);
 
-    d = c.indexOf(a);
-    //console.log("index of" + d);
-    //console.log(d);
+        c = b.split("-");
+        //console.log("character unicValue");
+        //console.log(c);
 
-    if (d != -1) {
-        e = c[d];
-        //console.log(e);
-        if (a === e) {
-            //console.log('Good');
-            input.value = "";
-            goodAnswerd();
-            return true;
+        d = c.indexOf(a);
+        //console.log("index of" + d);
+        //console.log(d);
+
+        if (d != -1) {
+            e = c[d];
+            //console.log(e);
+            if (a === e) {
+                //console.log('Good');
+                input.value = "";
+                goodAnswerd();
+                return true;
+            } else {
+                //console.log('not Good');
+                input.value = "";
+                badAnswerd();
+                return false;
+            }
         } else {
             //console.log('not Good');
             input.value = "";
             badAnswerd();
             return false;
         }
-    } else {
-        //console.log('not Good');
-        input.value = "";
-        badAnswerd();
-        return false;
+    }else{
+        //console.log('NOP');
+        return;
     }
 }
 
@@ -300,7 +307,11 @@ function incrementTotal() {
 
     totalPoint.innerText = b.toString();
 
-    startGame();
+
+    setTimeout(() => {
+        startGame();
+    }, delay);
+
 };
 
 //share to Twitter
