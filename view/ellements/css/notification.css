@@ -5,17 +5,28 @@
 }
 
 .toast {
-    background-color: #A0ABB6;
+    /*A0ABB6*/
+    background-color: #ffffff;
     border-radius: 15px;
 
-
-
     color: #000;
-    padding: 2rem;
-    margin: 1rem;
 
     text-align: center;
     font-size: 1.2em;
+
+    
+
+    padding: 2rem;
+    padding-bottom: 2.2rem;
+
+    margin: 1rem;
+    margin-bottom: 1.5rem;
+
+    min-height: 10px;
+    max-height: 15px;
+
+    min-width: 350px;
+    max-width: 350px;
 }
 
 .toast span{
