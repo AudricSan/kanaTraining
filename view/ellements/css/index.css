@@ -178,11 +178,15 @@ input {
   outline: none;
 }
 
-.check {
+#menu {
   position: absolute;
   z-index: 999;
   left: 20px;
   top: 20px;
+}
+
+#menu ul{
+  padding-left: 0%;
 }
 
 .submit {
