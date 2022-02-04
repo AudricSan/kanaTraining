@@ -51,6 +51,13 @@
 
   <div id="menu">
     <ul>
+      <div class="theme">
+        <input type="checkbox" class="switch theme" id="light" name="cc" onchange="selectTheme(this.id)" />
+        <label for="light">theme-color</label>
+      </div>
+      
+      <p class="divider">---------------------------------------</p>
+
       <div class="check">
 
         <input type="checkbox" class="switch" id="hiragana" name="cc" onchange="selectDificulty(this.id)" checked />
@@ -150,6 +157,7 @@
   <script src="../model/function.js"></script>
   <script src="ellements/js/app.js"></script>
   <script src="ellements/js/hamburger.js"></script>
+  <script src="ellements/js/theme.js"></script>
 </body>
 
 </html>
