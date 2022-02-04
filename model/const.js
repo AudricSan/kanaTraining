@@ -19,3 +19,5 @@ const helpbtn = document.querySelector('.help');
 const closer = document.querySelector('.helpcloser');
 
 const delay = 1000;
+
+var stateEllement = document.querySelector('.switch');
