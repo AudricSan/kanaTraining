@@ -19,6 +19,8 @@ function selectTheme(NextTheme) {
         case "dark":
             console.log('in dark');
             head.appendChild(link);
+
+            document.getElementById('theme').checked = true
             break;
 
         default:
@@ -26,9 +28,11 @@ function selectTheme(NextTheme) {
             if (head.contains(link)) {
                 head.removeChild(link);
                 NextTheme = 'light'
-            }else{
+            } else {
                 head.appendChild(link);
                 NextTheme = 'dark';
+
+                document.getElementById('theme').checked = true
             }
 
             console.log(NextTheme);
