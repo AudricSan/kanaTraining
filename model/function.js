@@ -135,15 +135,18 @@ function selectDificulty(id) {
     if (ellement.checked) {
         //console.log('checked');
         dificulty.push(ellement.id);
-        //console.log(dificulty);
+        console.log(dificulty);
+        document.cookie = "dificulty=" + dificulty;
     } else {
         //console.log('unchecked');
         const index = dificulty.indexOf(ellement.id);
         if (index > -1) {
             dificulty.splice(index, 1);
         }
-        //console.log(dificulty);
+        console.log(dificulty);
+        document.cookie = "dificulty=" + dificulty;
     }
+    
     startGame();
 }
 
@@ -229,8 +232,8 @@ function createNotification(txt, c) {
 //Answerd checker
 function checkAnswerd() {
 
-    
-    if(document.getElementsByClassName("toast").length === 0){
+
+    if (document.getElementsByClassName("toast").length === 0) {
         //console.log('coucou');
         //console.log(input);
         //console.log(input.innerHTML);
@@ -272,7 +275,7 @@ function checkAnswerd() {
             badAnswerd();
             return false;
         }
-    }else{
+    } else {
         //console.log('NOP');
         return;
     }
@@ -307,11 +310,12 @@ function incrementTotal() {
 
     totalPoint.innerText = b.toString();
 
-
     setTimeout(() => {
         startGame();
     }, delay);
 
+    a = myPoint.innerText;
+    document.cookie = "score=" + a + "/" + b;
 };
 
 //share to Twitter
