@@ -52,20 +52,20 @@
   <div id="menu">
     <ul>
       <div class="theme">
-        <input type="checkbox" class="switch theme" id="light" name="cc" onchange="selectTheme(this.id)" />
-        <label for="light">theme-color</label>
+        <input type="checkbox" class="switch theme" id="theme" name="cc" onchange="selectTheme()" />
+        <label for="theme">theme-color</label>
       </div>
       
       <p class="divider">---------------------------------------</p>
 
       <div class="check">
 
-        <input type="checkbox" class="switch" id="hiragana" name="cc" onchange="selectDificulty(this.id)" checked />
+        <input type="checkbox" class="switch" id="hiragana" name="cc" onchange="selectDificulty(this.id)" checked/>
         <label for="hiragana">Hiragana</label>
 
         <br>
 
-        <input type="checkbox" class="switch" id="hiraganaCombo" name="cc" onchange="selectDificulty(this.id)" />
+        <input type="checkbox" class="switch" id="hiraganaCombo" name="cc" onchange="selectDificulty(this.id)"/>
         <label for="hiraganaCombo">Hiragana Combo</label>
 
         <br>
@@ -151,13 +151,17 @@
     The github project
     <span class="fab fa-github icongit"></span>
   </a>
-
-  <script src="../model/class/kana.js"></script>
   <script src="../model/const.js"></script>
+  <script src="../model/class/kana.js"></script>
+
+  <script src="ellements/js/save.js"></script>
+
   <script src="../model/function.js"></script>
-  <script src="ellements/js/app.js"></script>
   <script src="ellements/js/hamburger.js"></script>
   <script src="ellements/js/theme.js"></script>
+
+  <script src="ellements/js/app.js"></script>
+
 </body>
 
 </html>

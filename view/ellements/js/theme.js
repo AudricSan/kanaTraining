@@ -1,28 +1,39 @@
-const head = document.getElementsByTagName('HEAD')[0]; 
+const head = document.getElementsByTagName('HEAD')[0];
 var link = document.createElement('link');
-link.rel = 'stylesheet'; 
+
+link.rel = 'stylesheet';
 link.type = 'text/css';
 link.href = 'ellements/css/darktheme.css';
 
 //Change Theme
-function selectTheme(state) {
-    console.log(state);
-    console.log(stateEllement);
-
-    switch (state) {
-        case "dark":
-            console.log('dark state to light');
-            var NextTheme = 'light'
-            head.removeChild(link);
-            stateEllement.id = 'light';
+function selectTheme(NextTheme) {
+    let cc = NextTheme
+    switch (NextTheme) {
+        case "light":
+            console.log('in light');
+            if (head.contains(link)) {
+                head.removeChild(link);
+            }
             break;
 
-        case "light":
-            console.log('light state to dark');
-            var NextTheme = 'dark'
+        case "dark":
+            console.log('in dark');
             head.appendChild(link);
-            stateEllement.id = 'dark';
-            // console.log(stateEllement);
+            break;
+
+        default:
+            console.log('default (Flip/Flop)');
+            if (head.contains(link)) {
+                head.removeChild(link);
+                NextTheme = 'light'
+            }else{
+                head.appendChild(link);
+                NextTheme = 'dark';
+            }
+
+            console.log(NextTheme);
+
+            document.cookie = "theme=" + NextTheme;
             break;
     }
 }
