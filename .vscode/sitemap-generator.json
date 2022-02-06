@@ -1,7 +1,30 @@
 {
   "sitemap.xml": {
+    "Protocol": "https",
+    "DomainName": "kana.audricrosier.be",
+    "Root": "./",
+    "IncludeExt": [
+      ".html",
+      ".php",
+      ".js"
+    ],
+    "Exclude": [],
+    "TagsToInclude": [
+      "priority",
+      "lastmod"
+    ],
+    "DefaultChangeFrequency": "monthly",
+    "TabCharacters": "\t",
+    "bIncludeWWW": true,
+    "bRemoveFileExtentions": false,
+    "bUseTrailingSlash": false,
+    "bAutomaticallyUpdateSitemap": true,
+    "bMinimized": false
+  },
+
+  "sitemap_http.xml": {
     "Protocol": "http",
-    "DomainName": "kana.audricrosier;be",
+    "DomainName": "kana.audricrosier.be",
     "Root": "./",
     "IncludeExt": [
       ".html",
