@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://www.kana.audricrosier.be</loc>
-		<priority>0.83</priority>
-		<lastmod>2022-02-06</lastmod>
-	</url>
-	<url>
 		<loc>https://www.kana.audricrosier.be/view</loc>
 		<priority>0.83</priority>
 		<lastmod>2022-02-06</lastmod>
 	</url>
 	<url>
-		<loc>https://www.kana.audricrosier.be/model/const.js</loc>
+		<loc>https://www.kana.audricrosier.be</loc>
+		<priority>0.83</priority>
+		<lastmod>2022-02-06</lastmod>
+	</url>
+	<url>
+		<loc>https://www.kana.audricrosier.be/view/ellements/js/function.js</loc>
 		<priority>0.67</priority>
 		<lastmod>2022-02-06</lastmod>
 	</url>
 	<url>
-		<loc>https://www.kana.audricrosier.be/model/function.js</loc>
+		<loc>https://www.kana.audricrosier.be/model/const.js</loc>
 		<priority>0.67</priority>
 		<lastmod>2022-02-06</lastmod>
 	</url>
@@ -26,7 +26,12 @@
 		<lastmod>2022-02-05</lastmod>
 	</url>
 	<url>
-		<loc>https://www.kana.audricrosier.be/view/ellements/js/app.js</loc>
+		<loc>https://www.kana.audricrosier.be/view/ellements/js/theme.js</loc>
+		<priority>0.33</priority>
+		<lastmod>2022-02-06</lastmod>
+	</url>
+	<url>
+		<loc>https://www.kana.audricrosier.be/view/ellements/js/save.js</loc>
 		<priority>0.33</priority>
 		<lastmod>2022-02-06</lastmod>
 	</url>
@@ -36,12 +41,7 @@
 		<lastmod>2022-02-04</lastmod>
 	</url>
 	<url>
-		<loc>https://www.kana.audricrosier.be/view/ellements/js/save.js</loc>
-		<priority>0.33</priority>
-		<lastmod>2022-02-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.kana.audricrosier.be/view/ellements/js/theme.js</loc>
+		<loc>https://www.kana.audricrosier.be/view/ellements/js/app.js</loc>
 		<priority>0.33</priority>
 		<lastmod>2022-02-06</lastmod>
 	</url>

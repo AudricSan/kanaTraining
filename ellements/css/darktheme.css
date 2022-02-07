@@ -104,3 +104,7 @@ input[type='checkbox'] {
 .divider {
     color: white;
 }
+
+#help-spawner{
+    color: #e6e6e6;
+}
