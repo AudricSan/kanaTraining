@@ -1,1 +1,1 @@
-# kakaTraining
+# kanaTraining
