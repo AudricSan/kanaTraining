@@ -340,17 +340,21 @@ input {
   padding-right: 1em;
 }
 
-.connect span {
-  margin-right: 0.1em;
+.connect a:last-of-type {
+  margin-left: 1em;
 }
 
-.connect:hover {
+.connect a:hover {
   border-color: #A0ABB6;
   background-color: #6B8D6A;
   color: #f6f8ff;
 }
 
-.connect:hover a {
+.connect a:hover a {
   color: #f6f8ff;
+}
+
+.connect span {
+  margin-right: 0.1em;
 }
 /*# sourceMappingURL=index.css.map */

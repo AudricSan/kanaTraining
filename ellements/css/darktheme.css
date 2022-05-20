@@ -106,21 +106,17 @@ input[type='checkbox'] {
 }
 
 .connect {
-  border: solid 1px #c5ffc3;
   color: #f6f8ff;
 }
 
 .connect a {
   color: #f6f8ff;
+  border: solid 1px #c5ffc3;
 }
 
-.connect:hover {
+.connect a:hover {
   border-color: #c5ffc3;
   background-color: #c5ffc3;
   color: #000;
-}
-
-input[type='submit'] {
-  color: #f6f8ff;
 }
 /*# sourceMappingURL=darktheme.css.map */

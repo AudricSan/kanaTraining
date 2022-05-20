@@ -329,6 +329,20 @@ input {
   
     padding: 0.5em;
     padding-right: 1em;
+
+    &:last-of-type{
+      margin-left: 1em;
+    }
+
+    &:hover{
+      border-color: #A0ABB6;
+      background-color: #6B8D6A;
+      color: #f6f8ff;
+  
+      a{
+        color: #f6f8ff;
+      }
+    }
   }
 
   span{
@@ -336,14 +350,4 @@ input {
   };
 
   margin-bottom: 0.5em;
-
-  &:hover{
-    border-color: #A0ABB6;
-    background-color: #6B8D6A;
-    color: #f6f8ff;
-
-    a{
-      color: #f6f8ff;
-    }
-  }
 }
