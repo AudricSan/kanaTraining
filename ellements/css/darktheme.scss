@@ -109,15 +109,15 @@ input[type='checkbox'] {
     border: solid 1px #c5ffc3;
     color: #f6f8ff;
 
+    a{
+        color: #f6f8ff;
+    }
+
     &:hover{
         border-color: #c5ffc3;
         background-color: #c5ffc3;
         color: #000;
-    
-        input{
-          color: #000;
-        }
-      }
+    }
 }
 
 input[type='submit']{

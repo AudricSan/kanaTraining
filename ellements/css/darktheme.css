@@ -110,13 +110,13 @@ input[type='checkbox'] {
   color: #f6f8ff;
 }
 
+.connect a {
+  color: #f6f8ff;
+}
+
 .connect:hover {
   border-color: #c5ffc3;
   background-color: #c5ffc3;
-  color: #000;
-}
-
-.connect:hover input {
   color: #000;
 }
 
