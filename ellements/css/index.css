@@ -326,12 +326,16 @@ input {
 }
 
 .connect a {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #000;
   text-decoration: none;
   border-radius: 50px;
@@ -340,7 +344,7 @@ input {
   padding-right: 1em;
 }
 
-.connect a:last-of-type {
+.connect a:nth-child(2) {
   margin-left: 1em;
 }
 

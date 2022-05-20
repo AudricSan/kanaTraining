@@ -319,8 +319,12 @@ input {
   border: none;
 
   a{
+    width: 100%;
+
     display: flex;
     align-items: center;
+    justify-content: center;
+
     color: #000;
     text-decoration: none;
 
@@ -330,7 +334,7 @@ input {
     padding: 0.5em;
     padding-right: 1em;
 
-    &:last-of-type{
+    &:nth-child(2){
       margin-left: 1em;
     }
 
