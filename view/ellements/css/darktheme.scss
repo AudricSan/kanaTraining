@@ -1,0 +1,125 @@
+body {
+    background: #1e1e1e;
+}
+
+a:hover, a:active {
+    color: #c5ffc3;
+}
+
+a:focus, a:visited {
+    color: #A0ABB6;
+}
+
+.hiragana-symbol div {
+    color: #c5ffc3;
+}
+
+.hiragana-symbol .input {
+    color: white;
+    background-color: #6a6a6a;
+}
+
+.sc {
+    color: #e6e6e6;
+}
+
+.score, .iconscore {
+    color: #A0ABB6;
+}
+
+.iconkeyboard {
+    color: #868686;
+}
+
+.score .total {
+    color: #c5ffc3;
+}
+
+.fa-twitter {
+    color: #c5ffc3;
+}
+
+.twitter-share span {
+    color: #1e1e1e;
+}
+
+.twitter-share:hover span {
+    color: #c5ffc3;
+}
+
+.help, .iconhelp {
+    color: #A0ABB6;
+}
+
+.help:hover, .help:hover span {
+    color: #c5ffc3 !important;
+}
+
+label {
+    color: #e6e6e6;
+}
+
+.author {
+    color: #A0ABB6;
+}
+
+.author:hover, .author:hover span {
+    color: #c5ffc3 !important;
+}
+
+.git, .gitbug {
+    color: #A0ABB6;
+}
+
+.git:hover, .git:hover span {
+    color: #c5ffc3 !important;
+}
+
+#help-spawner {
+    background-color: #1e1e1e;
+}
+
+.items li {
+    border-bottom: 2px solid #A0ABB6;
+}
+
+.items li .romanji {
+    color: #C97D7A;
+}
+
+.helpcloser {
+    background-color: #1e1e1e;
+}
+
+input[type='checkbox'] {
+    --active: #85b483;
+    --active-inner: #e6e6e6;
+    --border: #A0ABB6;
+    --border-hover: #85b483;
+    --background: #e6e6e6;
+    --disabled: #f6f8ff;
+    --disabled-inner: #e1e6f9;
+}
+
+.divider {
+    color: white;
+}
+
+.connect{
+    border: solid 1px #c5ffc3;
+    color: #f6f8ff;
+
+    &:hover{
+        border-color: #c5ffc3;
+        background-color: #c5ffc3;
+        color: #000;
+    
+        input{
+          color: #000;
+        }
+      }
+}
+
+input[type='submit']{
+    color: #f6f8ff;
+}

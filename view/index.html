@@ -22,7 +22,11 @@
 
   <!-- ICON CSS -->
   <script src="https://kit.fontawesome.com/eb747bd21c.js" crossorigin="anonymous"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+round" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
 
   <!-- FAVICON -->
   <link rel="apple-touch-icon" sizes="180x180" href="ellements/img/favicon/apple-touch-icon.png">
@@ -51,21 +55,28 @@
 
   <div id="menu">
     <ul>
+      <div class="connect">
+        <span class="material-symbols-rounded"> person </span>
+        <input type="submit" class="button" id="connect" name="connect" onchange="" value="connection">
+      </div>
+
+      <p class="divider">---------------------------------------</p>
+
       <div class="theme">
         <input type="checkbox" class="switch theme" id="theme" name="cc" onchange="selectTheme()" />
         <label for="theme">theme-color</label>
       </div>
-      
+
       <p class="divider">---------------------------------------</p>
 
       <div class="check">
 
-        <input type="checkbox" class="switch" id="hiragana" name="cc" onchange="selectDificulty(this.id)" checked/>
+        <input type="checkbox" class="switch" id="hiragana" name="cc" onchange="selectDificulty(this.id)" checked />
         <label for="hiragana">Hiragana</label>
 
         <br>
 
-        <input type="checkbox" class="switch" id="hiraganaCombo" name="cc" onchange="selectDificulty(this.id)"/>
+        <input type="checkbox" class="switch" id="hiraganaCombo" name="cc" onchange="selectDificulty(this.id)" />
         <label for="hiraganaCombo">Hiragana Combo</label>
 
         <br>
@@ -111,8 +122,7 @@
   </a>
 
   <div id="notification">
-  <!--<div class="toast">Nop bad answerd, the good one is <span>"A"</span> </div>
-  -->
+    <!-- <div class="toast">Nop bad answerd, the good one is <span>"A"</span> </div> -->
   </div>
 
   <div class="hiragana-symbol">
@@ -132,7 +142,8 @@
 
   <div class="score">
     <span class="sc">YOUR SCORE</span>
-    <span class="material-icons-round iconscore">sports_score</span>
+
+    <span class="material-symbols-rounded iconscore ">sports_score</span>
 
     <span class="good">0</span>/<span class="total">0</span>
 

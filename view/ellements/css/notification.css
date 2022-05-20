@@ -14,13 +14,11 @@
     text-align: center;
     font-size: 1.2em;
 
-    
-
     padding: 2rem;
     padding-bottom: 2.2rem;
 
-    margin: 1rem;
-    margin-bottom: 1.5rem;
+    /* margin: 1rem;
+    margin-bottom: 0.2rem; */
 
     min-height: 10px;
     max-height: 15px;
