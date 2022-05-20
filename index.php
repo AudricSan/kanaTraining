@@ -71,6 +71,7 @@ echo "
   <div id='menu'>
     <ul>
       <div class='connect'>";
+
       if (!$_SESSION['connected']) {
         echo "
           <!-- <a href='$link'> -->
@@ -78,6 +79,7 @@ echo "
           <span class='material-symbols-rounded'> person </span>
           Connection </a>";
       }else{
+        
         echo "
           <a href='profil.php'>
           <span class='material-symbols-rounded'> sensor_occupied </span>
