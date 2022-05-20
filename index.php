@@ -73,7 +73,8 @@ echo "
       <div class='connect'>";
       if (!$_SESSION['connected']) {
         echo "
-          <a href='$link'>
+          <!-- <a href='$link'> -->
+          <a href='#' onClick='createNotification(\"On an Future Update\", \"!\")'>
           <span class='material-symbols-rounded'> person </span>
           Connection </a>";
       }else{

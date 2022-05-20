@@ -231,8 +231,6 @@ function createNotification(txt, c) {
 
 //Answerd checker
 function checkAnswerd() {
-
-
     if (document.getElementsByClassName("toast").length === 0) {
         //console.log('coucou');
         //console.log(input);
