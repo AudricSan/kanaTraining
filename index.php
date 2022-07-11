@@ -195,6 +195,7 @@ echo "
     The github project
     <span class='fab fa-github icongit'></span>
   </a>
+  
   <script src='model/const.js'></script>
   <script src='model/class/kana.js'></script>
 
@@ -205,6 +206,7 @@ echo "
   <script src='ellements/js/theme.js'></script>
 
   <script src='ellements/js/app.js'></script>
+  <script src='model/db.js'></script>
 </body>
 
 </html>";
