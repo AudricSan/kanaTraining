@@ -2,6 +2,7 @@ html {
   font-size: 14px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
+  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -14,6 +15,7 @@ body {
   font-weight: 300;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
+  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -35,9 +37,13 @@ a:focus, a:visited {
   position: absolute;
   top: 50%;
   left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
 .hiragana-symbol div {
   font-size: 15rem;
   line-height: 15rem;
@@ -45,6 +51,7 @@ a:focus, a:visited {
   text-align: center;
   font-family: sans-serif;
 }
+
 .hiragana-symbol .input {
   font-size: 3rem;
   border: 0;
@@ -67,9 +74,11 @@ p {
   font-size: 0.85rem;
   padding-top: 4rem;
   text-align: center;
+  -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-p .test-skills {
+
+p.test-skills {
   margin-top: -5rem;
   margin-bottom: 4rem;
 }
@@ -110,7 +119,13 @@ p .test-skills {
 .twitter-share {
   text-decoration: none;
 }
+
+.fa-twitter {
+  color: #6B8D6A;
+}
+
 .twitter-share span {
+  -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   color: #f6f8ff;
   text-transform: uppercase;
@@ -119,11 +134,8 @@ p .test-skills {
   font-size: 0.85rem;
   margin-left: 0.25rem;
 }
-.twitter-share:hover span {
-  color: #6B8D6A;
-}
 
-.fa-twitter {
+.twitter-share:hover span {
   color: #6B8D6A;
 }
 
@@ -138,16 +150,18 @@ p .test-skills {
   letter-spacing: 0.1rem;
   font-weight: 400;
   font-size: 0.85rem;
+  -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-}
-.help:hover, .help:hover span, .iconhelp:hover, .iconhelp:hover span {
-  color: #6B8D6A !important;
 }
 
 .iconhelp {
   right: 60px;
   top: 13px;
   font-size: 25px !important;
+}
+
+.help:hover, .help:hover span {
+  color: #6B8D6A !important;
 }
 
 label {
@@ -171,7 +185,7 @@ input {
   top: 20px;
 }
 
-#menu ul {
+#menu ul{
   padding-left: 0%;
 }
 
@@ -265,6 +279,7 @@ input {
   text-align: center;
   max-width: 300px;
 }
+
 .items li {
   padding: 0;
   margin: 0;
@@ -273,13 +288,15 @@ input {
   border-bottom: 2px solid #A0ABB6;
   list-style-type: none;
 }
+
 .items li .kana {
   padding-top: 1rem;
   line-height: 2rem;
   font-size: 2rem;
 }
+
 .items li .romanji {
-  font-size: 0.85rem;
+  font-size: .85rem;
   line-height: 1.5rem;
   color: #C97D7A;
   text-transform: uppercase;
@@ -294,36 +311,3 @@ input {
   background-color: #f6f8ff;
   border-radius: 100%;
 }
-
-.connect {
-  display: flex;
-  justify-content: center;
-  border: none;
-  margin-bottom: 0.5em;
-}
-.connect a {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #000;
-  text-decoration: none;
-  border-radius: 50px;
-  border: solid 3px #6B8D6A;
-  padding: 0.5em;
-  padding-right: 1em;
-}
-.connect a:nth-child(2) {
-  margin-left: 1em;
-}
-.connect a:hover {
-  border-color: #A0ABB6;
-  background-color: #6B8D6A;
-  color: #f6f8ff;
-}
-.connect a:hover a {
-  color: #f6f8ff;
-}
-.connect span {
-  margin-right: 0.1em;
-}/*# sourceMappingURL=index.css.map */

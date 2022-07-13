@@ -91,7 +91,7 @@ label {
   background-color: #1e1e1e;
 }
 
-input[type='checkbox'] {
+input[type=checkbox] {
   --active: #85b483;
   --active-inner: #e6e6e6;
   --border: #A0ABB6;
@@ -108,15 +108,12 @@ input[type='checkbox'] {
 .connect {
   color: #f6f8ff;
 }
-
 .connect a {
   color: #f6f8ff;
   border: solid 1px #c5ffc3;
 }
-
 .connect a:hover {
   border-color: #c5ffc3;
   background-color: #c5ffc3;
   color: #000;
-}
-/*# sourceMappingURL=darktheme.css.map */
+}/*# sourceMappingURL=darktheme.css.map */
