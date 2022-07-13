@@ -66,15 +66,15 @@ echo "
 <body>
   <img class='logo' src='ellements/img/Blue - Green.png' alt='Grapefruit slice atop a pile of other slices'>
 
-  <a href='#menu' id='toggle'><span></span></a>
+  <a href='#menu' id='toggle'> <span> </span> </a>
 
   <div id='menu'>
     <ul>
       <div class='connect'>";
       if (!$_SESSION['connected']) {
         echo "
-          <!-- <a href='$link'> -->
-          <a href='#' onClick='createNotification(\"On an Future Update\", \"!\")'>
+          <a href='$link'>
+          <!-- <a href='#' onClick='createNotification(\"On an Future Update\", \"!\")'> -->
           <span class='material-symbols-rounded'> person </span>
           Connection </a>";
       }else{
@@ -195,13 +195,13 @@ echo "
   </a>
   <script src='model/const.js'></script>
   <script src='model/class/kana.js'></script>
+  <script src='model/db.js'></script>
 
   <script src='ellements/js/save.js'></script>
 
   <script src='model/function.js'></script>
   <script src='ellements/js/hamburger.js'></script>
   <script src='ellements/js/theme.js'></script>
-
   <script src='ellements/js/app.js'></script>
 </body>
 

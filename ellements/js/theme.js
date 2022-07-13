@@ -10,21 +10,21 @@ function selectTheme(NextTheme) {
     let cc = NextTheme
     switch (NextTheme) {
         case "light":
-            console.log('in light');
+            // console.log('in light');
             if (head.contains(link)) {
                 head.removeChild(link);
             }
             break;
 
         case "dark":
-            console.log('in dark');
+            // console.log('in dark');
             head.appendChild(link);
 
             document.getElementById('theme').checked = true
             break;
 
         default:
-            console.log('default (Flip/Flop)');
+            // console.log('default (Flip/Flop)');
             if (head.contains(link)) {
                 head.removeChild(link);
                 NextTheme = 'light'
@@ -35,7 +35,7 @@ function selectTheme(NextTheme) {
                 document.getElementById('theme').checked = true
             }
 
-            console.log(NextTheme);
+            // console.log(NextTheme);
 
             document.cookie = "theme=" + NextTheme;
             break;

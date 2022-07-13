@@ -46,7 +46,7 @@ function cookieInArray() {
 
 function deleteAllCookies() {
     var cookies = document.cookie;
-    console.log(cookies);
+    // console.log(cookies);
 
     for (var i = 0; i < cookies.length; i++) {
         var cookie = cookies[i];
@@ -71,7 +71,7 @@ function getSave() {
 
             switch (element[0]) {
                 case "dificulty":
-                    console.log('Dificulty Cookies');
+                    // console.log('Dificulty Cookies');
                     // console.log(element);
                     element = element[1];
                     // console.log(element);
@@ -81,10 +81,10 @@ function getSave() {
                         // console.log(split);
                 
                         difTable = split
-                        console.log(difTable)
+                        // console.log(difTable)
 
                         difTable.forEach(element => {
-                            console.log(element);
+                            // console.log(element);
     
                             document.getElementById(element).checked = true
                             selectDificulty(element);
@@ -94,23 +94,22 @@ function getSave() {
                     break;
 
                 case "score":
-                    console.log('Previous Score');
-                    console.log(element);
-
+                    // console.log('Previous Score');
+                    // console.log(element);
                     break;
 
                 case "theme":
-                    console.log('Actual Theme');
-                    console.log(element);
+                    // console.log('Actual Theme');
+                    // console.log(element);
 
                     NextTheme = element[1];
-                    console.log(NextTheme);
+                    // console.log(NextTheme);
 
                     selectTheme(NextTheme);
                     break;
 
                 default:
-                    console.log('default');
+                    // console.log('default');
                     break;
             }
         });
