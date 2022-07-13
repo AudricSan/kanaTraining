@@ -10,10 +10,6 @@ function getRandomHiragana() {
         let selectedHiragana = hiragana.hiragana;
         let nb = getRandomInteger(0, selectedHiragana.length - 1);
 
-        //console.log(selectedHiragana);
-        //console.log(nb);
-        //console.log(selectedHiragana[nb]);
-
         if (selectedHiragana != undefined) {
             selectedHiragana = selectedHiragana[nb]
             if (selectedHiragana[2] == true) {
@@ -153,7 +149,7 @@ function selectDificulty(id) {
 //GAME RUN
 function startGame() {
     const int = getRandomInteger(0, dificulty.length - 1)
-    //console.log(dificulty);
+    // console.log(dific ulty);
     //console.log(dificulty[int]);
     switch (dificulty[int]) {
         case "hiragana":
@@ -202,9 +198,6 @@ function startGame() {
             break;
     }
 
-    //console.log(character);
-    //console.log(character.innerHTML);
-
     character.innerHTML = selectedCharacter[0];
 }
 
@@ -232,49 +225,28 @@ function createNotification(txt, c) {
 //Answerd checker
 function checkAnswerd() {
     if (document.getElementsByClassName("toast").length === 0) {
-        //console.log('coucou');
-        //console.log(input);
-        //console.log(input.innerHTML);
-        //console.log(selectedCharacter);
-        //console.log(selectedCharacter[1]);
-
         let a = input.value.toLowerCase()
         let b = selectedCharacter[1];
-        //console.log("input value");
-        //console.log(a);
-        //console.log("character value");
-        //console.log(b);
-
         c = b.split("-");
-        //console.log("character unicValue");
-        //console.log(c);
-
         d = c.indexOf(a);
-        //console.log("index of" + d);
-        //console.log(d);
 
         if (d != -1) {
             e = c[d];
-            //console.log(e);
             if (a === e) {
-                //console.log('Good');
                 input.value = "";
                 goodAnswerd();
                 return true;
             } else {
-                //console.log('not Good');
                 input.value = "";
                 badAnswerd();
                 return false;
             }
         } else {
-            //console.log('not Good');
             input.value = "";
             badAnswerd();
             return false;
         }
     } else {
-        //console.log('NOP');
         return;
     }
 }
@@ -328,17 +300,12 @@ twitter.addEventListener('click', event => {
 })
 
 function getAllKana() {
-    //console.log(dificulty);
-    //console.log(helpContainer);
-
-    //dificulty = ['hiragana', 'katakana'];
     let helpTable = [];
 
     dificulty.forEach(e => {
         helpTable.push(hiragana[e]);
     });
 
-    //console.log(helpTable);
     const ul = document.createElement('ul');
     ul.classList.add("items");
 
@@ -346,7 +313,6 @@ function getAllKana() {
 
     helpTable.forEach(e => {
         e.forEach(a => {
-            //console.log(a);
             const li = document.createElement('li');
             const helpHiragana = document.createElement("div");
             const helpRomanji = document.createElement('div');

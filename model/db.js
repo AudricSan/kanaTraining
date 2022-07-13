@@ -2,11 +2,10 @@ console.log('Hello Wolrd, db.js');
 
 // localStorage.setItem('myCat', 'Tom');
 
-var localStorage = localStorage.getItem('');
-console.log(localStorage)
+// for (let i = 0; i < 10; i++) {
+//     localStorage.setItem(i, i);; 
+// }
 
-function save(name, value) {
-    // document.cookie = name + "=" + value;
-    localStorage.setItem(name, value);
-
-}
+// localStorage.getItem('');
+// localStorage.clear();
+// console.log(localStorage)
