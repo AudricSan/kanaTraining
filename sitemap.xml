@@ -7,57 +7,182 @@
 	</url>
 	<url>
 		<loc>http://www.kana.audricrosier;be/disconect.php</loc>
-		<priority>0.83</priority>
-		<lastmod>2022-05-20</lastmod>
+		<priority>0.86</priority>
+		<lastmod>2022-07-13</lastmod>
 	</url>
 	<url>
-		<loc>http://www.kana.audricrosier;be/view</loc>
-		<priority>0.83</priority>
-		<lastmod>2022-05-20</lastmod>
-	</url>
-	<url>
-		<loc>http://www.kana.audricrosier;be/view/connect.php</loc>
-		<priority>0.67</priority>
-		<lastmod>2022-05-20</lastmod>
-	</url>
-	<url>
-		<loc>http://www.kana.audricrosier;be/model/const.js</loc>
-		<priority>0.67</priority>
-		<lastmod>2022-02-06</lastmod>
+		<loc>http://www.kana.audricrosier;be/callback.php</loc>
+		<priority>0.86</priority>
+		<lastmod>2022-07-13</lastmod>
 	</url>
 	<url>
 		<loc>http://www.kana.audricrosier;be/model/function.js</loc>
-		<priority>0.67</priority>
+		<priority>0.71</priority>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	<url>
+		<loc>http://www.kana.audricrosier;be/model/db.js</loc>
+		<priority>0.71</priority>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	<url>
+		<loc>http://www.kana.audricrosier;be/model/const.js</loc>
+		<priority>0.71</priority>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	<url>
+		<loc>http://www.kana.audricrosier;be/BackUP/2.0</loc>
+		<priority>0.71</priority>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	<url>
+		<loc>http://www.kana.audricrosier;be/BackUP/1.0</loc>
+		<priority>0.71</priority>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	<url>
+		<loc>http://www.kana.audricrosier;be/model/class/oauthtwitch.php</loc>
+		<priority>0.57</priority>
 		<lastmod>2022-07-13</lastmod>
 	</url>
 	<url>
 		<loc>http://www.kana.audricrosier;be/model/class/kana.js</loc>
-		<priority>0.50</priority>
-		<lastmod>2022-02-05</lastmod>
+		<priority>0.57</priority>
+		<lastmod>2022-07-13</lastmod>
 	</url>
 	<url>
-		<loc>http://www.kana.audricrosier;be/view/ellements/js/app.js</loc>
-		<priority>0.33</priority>
-		<lastmod>2022-02-06</lastmod>
+		<loc>http://www.kana.audricrosier;be/model/class/config.php</loc>
+		<priority>0.57</priority>
+		<lastmod>2022-07-13</lastmod>
 	</url>
 	<url>
-		<loc>http://www.kana.audricrosier;be/view/ellements/js/hamburger.js</loc>
-		<priority>0.33</priority>
-		<lastmod>2022-02-04</lastmod>
+		<loc>http://www.kana.audricrosier;be/ellements/js/theme.js</loc>
+		<priority>0.57</priority>
+		<lastmod>2022-07-13</lastmod>
 	</url>
 	<url>
-		<loc>http://www.kana.audricrosier;be/view/ellements/js/save.js</loc>
-		<priority>0.33</priority>
-		<lastmod>2022-02-06</lastmod>
+		<loc>http://www.kana.audricrosier;be/ellements/js/save.js</loc>
+		<priority>0.57</priority>
+		<lastmod>2022-07-13</lastmod>
 	</url>
 	<url>
-		<loc>http://www.kana.audricrosier;be/view/ellements/js/theme.js</loc>
-		<priority>0.33</priority>
-		<lastmod>2022-02-06</lastmod>
+		<loc>http://www.kana.audricrosier;be/ellements/js/hamburger.js</loc>
+		<priority>0.57</priority>
+		<lastmod>2022-07-13</lastmod>
 	</url>
 	<url>
-		<loc>http://www.kana.audricrosier;be/view/ellements/img/favicon/html_code.html</loc>
-		<priority>0.17</priority>
-		<lastmod>2022-02-04</lastmod>
+		<loc>http://www.kana.audricrosier;be/ellements/js/app.js</loc>
+		<priority>0.57</priority>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	<url>
+		<loc>http://www.kana.audricrosier;be/BackUP/2.0/disconect.php</loc>
+		<priority>0.57</priority>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	<url>
+		<loc>http://www.kana.audricrosier;be/BackUP/2.0/callback.php</loc>
+		<priority>0.57</priority>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	<url>
+		<loc>http://www.kana.audricrosier;be/ellements/img/favicon/html_code.html</loc>
+		<priority>0.43</priority>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	<url>
+		<loc>http://www.kana.audricrosier;be/BackUP/2.0/model/function.js</loc>
+		<priority>0.43</priority>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	<url>
+		<loc>http://www.kana.audricrosier;be/BackUP/2.0/model/db.js</loc>
+		<priority>0.43</priority>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	<url>
+		<loc>http://www.kana.audricrosier;be/BackUP/2.0/model/const.js</loc>
+		<priority>0.43</priority>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	<url>
+		<loc>http://www.kana.audricrosier;be/BackUP/2.0/model/class/oauthtwitch.php</loc>
+		<priority>0.29</priority>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	<url>
+		<loc>http://www.kana.audricrosier;be/BackUP/2.0/model/class/kana.js</loc>
+		<priority>0.29</priority>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	<url>
+		<loc>http://www.kana.audricrosier;be/BackUP/2.0/model/class/config.php</loc>
+		<priority>0.29</priority>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	<url>
+		<loc>http://www.kana.audricrosier;be/BackUP/2.0/ellements/js/theme.js</loc>
+		<priority>0.29</priority>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	<url>
+		<loc>http://www.kana.audricrosier;be/BackUP/2.0/ellements/js/save.js</loc>
+		<priority>0.29</priority>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	<url>
+		<loc>http://www.kana.audricrosier;be/BackUP/2.0/ellements/js/hamburger.js</loc>
+		<priority>0.29</priority>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	<url>
+		<loc>http://www.kana.audricrosier;be/BackUP/2.0/ellements/js/app.js</loc>
+		<priority>0.29</priority>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	<url>
+		<loc>http://www.kana.audricrosier;be/BackUP/1.0/ellements/js/theme.js</loc>
+		<priority>0.29</priority>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	<url>
+		<loc>http://www.kana.audricrosier;be/BackUP/1.0/ellements/js/save.js</loc>
+		<priority>0.29</priority>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	<url>
+		<loc>http://www.kana.audricrosier;be/BackUP/1.0/ellements/js/hamburger.js</loc>
+		<priority>0.29</priority>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	<url>
+		<loc>http://www.kana.audricrosier;be/BackUP/1.0/ellements/js/function.js</loc>
+		<priority>0.29</priority>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	<url>
+		<loc>http://www.kana.audricrosier;be/BackUP/1.0/ellements/js/const.js</loc>
+		<priority>0.29</priority>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	<url>
+		<loc>http://www.kana.audricrosier;be/BackUP/1.0/ellements/js/app.js</loc>
+		<priority>0.29</priority>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	<url>
+		<loc>http://www.kana.audricrosier;be/BackUP/2.0/ellements/img/favicon/html_code.html</loc>
+		<priority>0.14</priority>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	<url>
+		<loc>http://www.kana.audricrosier;be/BackUP/1.0/ellements/js/class/kana.js</loc>
+		<priority>0.14</priority>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	<url>
+		<loc>http://www.kana.audricrosier;be/BackUP/1.0/ellements/img/favicon/html_code.html</loc>
+		<priority>0.14</priority>
+		<lastmod>2022-07-13</lastmod>
 	</url>
 </urlset>

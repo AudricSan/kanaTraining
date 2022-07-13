@@ -73,8 +73,8 @@ echo "
       <div class='connect'>";
       if (empty($_SESSION['token'])) {
         echo "
-          <a href='$link'>
-          <!-- <a href='#' onClick='createNotification(\"On an Future Update\", \"!\")'> -->
+          <!-- <a href='$link'> -->
+          <a href='#' onClick='createNotification(\"On an Future Update\", \"!\")'>
           <span class='material-symbols-rounded'> person </span>
           Connection </a>";
       }else{
