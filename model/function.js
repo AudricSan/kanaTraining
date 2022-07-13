@@ -4,122 +4,16 @@ function getRandomInteger(min, max) {
 }
 
 //Hiragana Function
-function getRandomHiragana() {
-    let selectedHiragana;
-    while (selectedHiragana != "undefined") {
-        let selectedHiragana = hiragana.hiragana;
-        let nb = getRandomInteger(0, selectedHiragana.length - 1);
+function getRandom(type) {
+    let selected;
+    while (selected != "undefined") {
+        let selected = hiragana[type];
+        let nb = getRandomInteger(0, selected.length - 1);
 
-        if (selectedHiragana != undefined) {
-            selectedHiragana = selectedHiragana[nb]
-            if (selectedHiragana[2] == true) {
-                return selectedHiragana;
-            }
-        }
-    }
-}
-
-function getRandomhiraganaCombo() {
-    let selectedhiraganaCombo;
-    while (selectedhiraganaCombo != "undefined") {
-        let selectedhiraganaCombo = hiragana.hiraganaCombo;
-        let nb = getRandomInteger(0, selectedhiraganaCombo.length - 1);
-
-        if (selectedhiraganaCombo != undefined) {
-            selectedhiraganaCombo = selectedhiraganaCombo[nb]
-            if (selectedhiraganaCombo[2] == true) {
-                return selectedhiraganaCombo;
-            }
-        }
-    }
-}
-
-function getRandomhiraganaDakuon() {
-    let selectedhiraganaDakuon;
-    while (selectedhiraganaDakuon != "undefined") {
-        let selectedhiraganaDakuon = hiragana.hiraganaDakuon;
-        let nb = getRandomInteger(0, selectedhiraganaDakuon.length - 1);
-
-        if (selectedhiraganaDakuon != undefined) {
-            selectedhiraganaDakuon = selectedhiraganaDakuon[nb]
-            if (selectedhiraganaDakuon[2] == true) {
-                return selectedhiraganaDakuon;
-            }
-        }
-    }
-}
-
-function getRandomhiraganaDakuonCombo() {
-    let selectedhiraganaDakuonCombo;
-    while (selectedhiraganaDakuonCombo != "undefined") {
-        let selectedhiraganaDakuonCombo = hiragana.hiraganaDakuonCombo;
-        let nb = getRandomInteger(0, selectedhiraganaDakuonCombo.length - 1);
-
-        if (selectedhiraganaDakuonCombo != undefined) {
-            selectedhiraganaDakuonCombo = selectedhiraganaDakuonCombo[nb]
-            if (selectedhiraganaDakuonCombo[2] == true) {
-                return selectedhiraganaDakuonCombo;
-            }
-        }
-    }
-}
-
-//Katakana Function
-function getRandomkatakana() {
-    let selectedkatakana;
-    while (selectedkatakana != "undefined") {
-        let selectedkatakana = hiragana.katakana;
-        let nb = getRandomInteger(0, selectedkatakana.length - 1);
-
-        if (selectedkatakana != undefined) {
-            selectedkatakana = selectedkatakana[nb]
-            if (selectedkatakana[2] == true) {
-                return selectedkatakana;
-            }
-        }
-    }
-}
-
-function getRandomkatakanaCombo() {
-    let selectedkatakanaCombo;
-    while (selectedkatakanaCombo != "undefined") {
-        let selectedkatakanaCombo = hiragana.katakanaCombo;
-        let nb = getRandomInteger(0, selectedkatakanaCombo.length - 1);
-
-        if (selectedkatakanaCombo != undefined) {
-            selectedkatakanaCombo = selectedkatakanaCombo[nb]
-            if (selectedkatakanaCombo[2] == true) {
-                return selectedkatakanaCombo;
-            }
-        }
-    }
-}
-
-function getRandomkatakanaDakuon() {
-    let selectedkatakanaDakuon;
-    while (selectedkatakanaDakuon != "undefined") {
-        let selectedkatakanaDakuon = hiragana.katakanaDakuon;
-        let nb = getRandomInteger(0, selectedkatakanaDakuon.length - 1);
-
-        if (selectedkatakanaDakuon != undefined) {
-            selectedkatakanaDakuon = selectedkatakanaDakuon[nb]
-            if (selectedkatakanaDakuon[2] == true) {
-                return selectedkatakanaDakuon;
-            }
-        }
-    }
-}
-
-function getRandomkatakanaDakuonCombo() {
-    let selectedkatakanaDakuonCombo;
-    while (selectedkatakanaDakuonCombo != "undefined") {
-        let selectedkatakanaDakuonCombo = hiragana.katakanaDakuonCombo;
-        let nb = getRandomInteger(0, selectedkatakanaDakuonCombo.length - 1);
-
-        if (selectedkatakanaDakuonCombo != undefined) {
-            selectedkatakanaDakuonCombo = selectedkatakanaDakuonCombo[nb]
-            if (selectedkatakanaDakuonCombo[2] == true) {
-                return selectedkatakanaDakuonCombo;
+        if (selected != undefined) {
+            selected = selected[nb]
+            if (selected[2] == true) {
+                return selected;
             }
         }
     }
@@ -128,18 +22,16 @@ function getRandomkatakanaDakuonCombo() {
 //add-Remove difficulty
 function selectDificulty(id) {
     let ellement = document.getElementById(id);
+    
     if (ellement.checked) {
-        //console.log('checked');
         dificulty.push(ellement.id);
-        console.log(dificulty);
         document.cookie = "dificulty=" + dificulty;
+
     } else {
-        //console.log('unchecked');
         const index = dificulty.indexOf(ellement.id);
         if (index > -1) {
             dificulty.splice(index, 1);
         }
-        console.log(dificulty);
         document.cookie = "dificulty=" + dificulty;
     }
     
@@ -149,52 +41,41 @@ function selectDificulty(id) {
 //GAME RUN
 function startGame() {
     const int = getRandomInteger(0, dificulty.length - 1)
-    // console.log(dific ulty);
-    //console.log(dificulty[int]);
     switch (dificulty[int]) {
         case "hiragana":
-            //console.log('hiragana');
-            selectedCharacter = getRandomHiragana();
+            selectedCharacter = getRandom('hiragana');
             break;
 
         case "hiraganaCombo":
-            //console.log('hiraganaCombo');
-            selectedCharacter = getRandomhiraganaCombo();
+            selectedCharacter = getRandom('hiraganaCombo');
             break;
 
         case "hiraganaDakuon":
-            //console.log('hiraganaDakuon');
-            selectedCharacter = getRandomhiraganaDakuon();
+            selectedCharacter = getRandom('hiraganaDakuon');
             break;
 
         case "hiraganaDakuonCombo":
-            //console.log('hiraganaDakuonCombo');
-            selectedCharacter = getRandomhiraganaDakuonCombo();
+            selectedCharacter = getRandom('hiraganaDakuonCombo');
             break;
 
         case "katakana":
-            //console.log('katakana');
-            selectedCharacter = getRandomkatakana();
+            selectedCharacter = getRandom('katakana');
             break;
 
         case "katakanaCombo":
-            //console.log('katakanaCombo');
-            selectedCharacter = getRandomkatakanaCombo();
+            selectedCharacter = getRandom('katakanaCombo');
             break;
 
         case "katakanaDakuon":
-            //console.log('katakanaDakuon');
-            selectedCharacter = getRandomkatakanaDakuon();
+            selectedCharacter = getRandom('katakanaDakuon');
             break;
 
         case "katakanaDakuonCombo":
-            //console.log('katakanaDakuonCombo');
-            selectedCharacter = getRandomkatakanaDakuonCombo();
+            selectedCharacter = getRandom('katakanaDakuonCombo');
             break;
 
         default:
-            //console.log('default');
-            selectedCharacter = getRandomHiragana();
+            selectedCharacter = getRandom('hiragana');
             break;
     }
 
