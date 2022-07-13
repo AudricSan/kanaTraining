@@ -36,8 +36,8 @@ function selectTheme(NextTheme) {
             }
 
             // console.log(NextTheme);
-
-            document.cookie = "theme=" + NextTheme;
+            save('theme', NextTheme);
+            // document.cookie = "theme=" + NextTheme;
             break;
     }
 }

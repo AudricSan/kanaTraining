@@ -71,7 +71,7 @@ echo "
   <div id='menu'>
     <ul>
       <div class='connect'>";
-      if (!$_SESSION['connected']) {
+      if (empty($_SESSION['token'])) {
         echo "
           <a href='$link'>
           <!-- <a href='#' onClick='createNotification(\"On an Future Update\", \"!\")'> -->

@@ -22,17 +22,18 @@ function getRandom(type) {
 //add-Remove difficulty
 function selectDificulty(id) {
     let ellement = document.getElementById(id);
-    
+
     if (ellement.checked) {
         dificulty.push(ellement.id);
-        document.cookie = "dificulty=" + dificulty;
+        save('dificulty', dificulty);
 
     } else {
         const index = dificulty.indexOf(ellement.id);
         if (index > -1) {
             dificulty.splice(index, 1);
         }
-        document.cookie = "dificulty=" + dificulty;
+
+        save('dificulty', dificulty);
     }
     
     startGame();
