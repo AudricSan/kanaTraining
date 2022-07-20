@@ -25,6 +25,7 @@ function selectDificulty(id) {
 
     if (ellement.checked) {
         dificulty.push(ellement.id);
+
         save('dificulty', dificulty);
 
     } else {
@@ -36,6 +37,7 @@ function selectDificulty(id) {
         save('dificulty', dificulty);
     }
     
+    // console.log(dificulty);
     startGame();
 }
 
@@ -187,6 +189,9 @@ function getAllKana() {
     dificulty.forEach(e => {
         helpTable.push(hiragana[e]);
     });
+    
+    console.log(helpTable);
+    console.log(dificulty);
 
     const ul = document.createElement('ul');
     ul.classList.add("items");
@@ -214,12 +219,17 @@ function getAllKana() {
 
 //Open help
 helpbtn.addEventListener('click', event => {
+    console.log("help Opened");
+
     closer.classList.remove('hidden')
     getAllKana();
 })
 
 closer.addEventListener('click', event => {
+    console.log("help Closed");
+
     todel = helpContainer.children
     helpContainer.removeChild(todel[0]);
+
     closer.classList.add('hidden');
 })

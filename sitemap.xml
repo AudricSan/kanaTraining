@@ -3,7 +3,7 @@
 	<url>
 		<loc>http://www.kana.audricrosier;be</loc>
 		<priority>1.00</priority>
-		<lastmod>2022-07-13</lastmod>
+		<lastmod>2022-07-20</lastmod>
 	</url>
 	<url>
 		<loc>http://www.kana.audricrosier;be/disconect.php</loc>
@@ -18,7 +18,7 @@
 	<url>
 		<loc>http://www.kana.audricrosier;be/model/function.js</loc>
 		<priority>0.71</priority>
-		<lastmod>2022-07-13</lastmod>
+		<lastmod>2022-07-20</lastmod>
 	</url>
 	<url>
 		<loc>http://www.kana.audricrosier;be/model/db.js</loc>
@@ -28,7 +28,7 @@
 	<url>
 		<loc>http://www.kana.audricrosier;be/model/const.js</loc>
 		<priority>0.71</priority>
-		<lastmod>2022-07-13</lastmod>
+		<lastmod>2022-07-20</lastmod>
 	</url>
 	<url>
 		<loc>http://www.kana.audricrosier;be/BackUP/2.0</loc>
@@ -63,12 +63,12 @@
 	<url>
 		<loc>http://www.kana.audricrosier;be/ellements/js/save.js</loc>
 		<priority>0.57</priority>
-		<lastmod>2022-07-13</lastmod>
+		<lastmod>2022-07-20</lastmod>
 	</url>
 	<url>
 		<loc>http://www.kana.audricrosier;be/ellements/js/hamburger.js</loc>
 		<priority>0.57</priority>
-		<lastmod>2022-07-13</lastmod>
+		<lastmod>2022-07-20</lastmod>
 	</url>
 	<url>
 		<loc>http://www.kana.audricrosier;be/ellements/js/app.js</loc>

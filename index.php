@@ -102,7 +102,7 @@ echo "
 
       <div class='check'>
 
-        <input type='checkbox' class='switch' id='hiragana' name='cc' onchange='selectDificulty(this.id)' checked />
+        <input type='checkbox' class='switch' id='hiragana' name='cc' onchange='selectDificulty(this.id)' />
         <label for='hiragana'>Hiragana</label>
 
         <br>

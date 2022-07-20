@@ -19,7 +19,6 @@ function save(name, value) {
 
 function getSave() {
     let save = saveInArray();
-    // console.log(save);
 
     if (save) {
         save.forEach(element => {
@@ -27,26 +26,20 @@ function getSave() {
 
             switch (element[0]) {
                 case "dificulty":
-                    // console.log('Dificulty Cookies');
-                    // console.log(element);
                     element = element[1];
-                    // console.log(element);
 
                     if (element != '') {
                         let split = element.split(',');
-                        // console.log(split);
-
                         difTable = split
-                        // console.log(difTable)
 
                         difTable.forEach(element => {
-                            // console.log(element);
-
                             document.getElementById(element).checked = true
                             selectDificulty(element);
-
                         });
-                    }
+
+                    }else{
+                        document.getElementById('hiragana').checked = true
+                        selectDificulty('hiragana');                    }
                     break;
 
                 case "score":
